@@ -1,3 +1,3 @@
-## Project Description
+## Hammer Notepad Blog
 
-* [Original Website Template](https://learning-zone.github.io/website-templates/grass_stains/)
+* [Original Website Template](https://github.com/learning-zone/website-templates/tree/master/grass-stains)
