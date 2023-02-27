@@ -1,2 +1,0 @@
-# justbluuu.github.io
-# Hello!
