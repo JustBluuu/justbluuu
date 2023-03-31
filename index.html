@@ -1,31 +1,89 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-  
 <head>
-  
-<style>
-  
-body {
-  background-image: url('https://raw.githubusercontent.com/JustBluuu/justbluuu.github.io/main/images/background01.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-}
-  
-</style>
-  
+	<meta charset="utf-8">
+	<meta name="author" content="Bluu">
+	<meta name="description" content="REPLACE">
+	<meta name="keywords" content="male_02">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>REPLACE</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="window-engine.css">
 </head>
-  
+
 <body>
 
-<h1 style="font-family: Arial">Under Construction</h1>
+	<div class="windowGroup">
 
-<p style="font-family: Arial">Work in progress. Come back later.</p>
-  
-<img src="https://raw.githubusercontent.com/JustBluuu/justbluuu.github.io/main/images/bluupunt.png" style="width:565px;height:181px;">
+		<!-- WINDOW 1 -->
 
+		<div id="window1" class="window small">
+				<p class="windowTitle">About Me</p>
+			<div class="mainWindow">
+				<p>Hey, i'm Bluu.</p>
+				<p>I've been doing source engine stuff for 4 years!</p>
+				<p>Currently working on:</p>
+				<p>Gordon Freakman 2.5</p>
+				<p>BionicCoyote Simulator 2069 with rapappa the pepper</p>
+				<p>FRMod</p>
+			</div>
+		</div>
+
+		<!-- WINDOW 1 -->
+
+		<div id="window2" class="window taller">
+				<p class="windowTitle">Projects</p>
+			<div class="mainWindow">
+				<p>Welcome to the projects window!</p>
+			</div>
+		</div>
+
+
+		<!-- WINDOW 1 -->
+
+		<div id="window3" class="window small">
+				<p class="windowTitle">Music</p>
+			<div class="mainWindow">
+				<p>I can <i>kinda</i> do some music shit.</p>
+				<p>Most of them I'm not too proud of, but some I am kinda proud of.</p>
+				<p><a href="https://soundcloud.com/gordon-freakman">The songs i'm actually proud of.</a></p>
+			</div>
+		</div>
+		<div id="window4" class="window small">
+				<p class="windowTitle">Music</p>
+			<div class="mainWindow">
+				<p>I can <i>kinda</i> do some music shit.</p>
+				<p>Most of them I'm not too proud of, but some I am kinda proud of.</p>
+				<p><a href="https://soundcloud.com/gordon-freakman">The songs i'm actually proud of.</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<span id="button1"	class="my-button">About Me</span>
+		<span id="button2"	class="my-button">Projects</span>
+		<span id="button3"	class="my-button">Music</span>
+		<span id="button4"	class="my-button">Music</span>
+	</div>
 </body>
-  
-</html>
+<script src="window-engine.js"></script>
 
+<script>
+  const buttons = document.getElementsByClassName("my-button");
+  let audio = new Audio("buttonclickrelease.wav");
+  
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("mouseover", function() {
+      audio = new Audio("buttonrollover.wav");
+      audio.play();
+    });
+    buttons[i].addEventListener("click", function() {
+      audio = new Audio("buttonclickrelease.wav");
+      audio.play();
+    });
+  }
+</script>
+
+<script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+</html>
