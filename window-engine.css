@@ -1,0 +1,150 @@
+/* Window Engine - MIT License - Copyright (c) 2019 Gauthier Staehler */
+
+.window {
+font-smooth: never;
+	position: absolute;
+	top: 80px;
+	z-index: 9;
+	font-size: 13px;    
+color: #fff;
+    background: rgba(160, 160, 160, 0.76862745098039215686274509803922) !important;
+    padding:0;
+    border-radius: 5px;
+	width: 800px;
+	height: 400px;
+	opacity: 1;
+	display: none;
+}
+a{
+text-decoration: none; 
+	color: white;
+	cursor: pointer;
+padding: 11px;
+	font-size: 13px;  
+	line-height: 30px;
+    border-left: 1px rgba(200, 200, 200, 0.76862745098039215686274509803922) solid;
+    border-top: 1px rgba(200, 200, 200, 0.76862745098039215686274509803922) solid;
+    border-right: 1px rgba(40, 40, 40, 0.76862745098039215686274509803922) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.76862745098039215686274509803922) solid;
+
+}
+
+.skinnybutton
+{
+padding: 6px; 
+	line-height: 15px;
+}
+
+a:active {
+    border-left: 1px rgba(40, 40, 40, 0.76862745098039215686274509803922) solid;
+    border-top: 1px rgba(40, 40, 40, 0.76862745098039215686274509803922) solid;
+    border-right: 1px rgba(200, 200, 200, 0.76862745098039215686274509803922) solid;
+    border-bottom: 1px rgba(200, 200, 200, 0.76862745098039215686274509803922) solid;
+}
+
+[id$="header"] {
+	padding: 10px;
+	padding-top: 8px;
+	z-index: 10;
+	//bottom: 5px;
+	font-size: 11px;    
+	background-color: transparent;
+	color: #fff;
+	border-radius: 4px 4px 0 0;
+	height: 40px;
+	justify-content: space-between;
+	display: flex;
+	touch-action: none;
+}
+
+.windowActive {
+	z-index: 100;
+}
+
+.windowTitle {
+	position: relative;
+	font-weight: bold;
+text-transform: uppercase;
+	bottom: 2px;
+}
+
+.mainWindow {
+	padding: 20px;
+line-height: 7px;
+	padding-top: 0px;
+}
+
+[id^="closeButton"] {
+    font-family: Webdings;
+	color: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+	position: relative;
+	left: 4px;
+	top: 0px;
+	font-size: 14px;    
+text-transform: lowercase;
+    width: 18px;
+    height: 18px;
+    text-align: right;
+line-height: 15px;
+}
+
+.windowGroup {
+	justify-content: center;
+	display: flex;
+	font-family: Tahoma;
+	line-height: 1.5;
+}
+
+.purple {
+	background-color: rebeccapurple;
+}
+
+.orange {
+	background-color: burlywood;
+}
+
+.brown {
+	background-color: brown;
+}
+
+.cyan {
+	background-color: darkcyan;
+}
+
+.crimson {
+	background-color: crimson;
+}
+
+.green {
+	background-color: darkgreen;
+}
+
+.small {
+	width: 512px;
+	height: 406px;
+}
+.taller {
+	width: 512px;
+	height: 600px;
+}
+.tallest {
+	width: 512px;
+	height: 748px;
+}
+.large {
+	width: 1000px;
+	height: 500px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.windowGroup p {
+	cursor: default;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
