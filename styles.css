@@ -47,7 +47,7 @@ text-transform: uppercase;
 }
 @font-face {
   font-family: "NotComicSans";
-  src: url(https://justbluu.com/UniversLTStd-BoldCn.ttf) format('opentype')
+  src: url(http://www.justbluu.com/UniversLTStd-BoldCn.ttf) format('opentype')
 }
 p {
 	cursor: default;
