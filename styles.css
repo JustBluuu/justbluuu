@@ -63,7 +63,7 @@ p {
         -webkit-text-stroke-color: black;
   white-space: nowrap;
 	font-weight: bold;
-	font-family: NotComicSans
+	font-family: NotComicSans;
 line-height: 30px;
 position:relative;
 }
