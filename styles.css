@@ -59,8 +59,15 @@ p {
 	color: rgb(200,200,200);
 	cursor: pointer;
 	font-size: 18px;
-	-webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
+	 text-shadow:
+    -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
   white-space: nowrap;
 	font-weight: bold;
 	font-family: NotComicSans;
