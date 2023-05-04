@@ -1,3 +1,4 @@
 ## justbluu.com website source code
 
-what are ya doing here?
+Here is the src code to my website. Don't know why'd you want it, but it's here.
+Credits to Gordon Freakman for website template.
