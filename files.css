@@ -8,6 +8,10 @@ background-size: 100vw 100vh;
 font-smooth: never;
 -webkit-font-smoothing : none;
 	line-height: 1.5;
+	
+body {
+    border-style: solid;
+
 }
 *
 {
