@@ -1,0 +1,10 @@
+body {
+background: url(bg5.png) no-repeat center center fixed;
+background-size: 100vw 100vh;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	font-family: Tahoma;
+font-smooth: never;
+-webkit-font-smoothing : none;
+}
