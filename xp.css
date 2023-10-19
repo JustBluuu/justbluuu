@@ -6,6 +6,7 @@ background-size: 100vw 100vh;
 	overflow: hidden;
 font-smooth: never;
 -webkit-font-smoothing : none;
+cursor: url(xpcursor.cur')
 }
 
 #taskbar {
