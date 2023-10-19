@@ -10,7 +10,7 @@ font-smooth: never;
 
 #taskbar {
 background: url(xpbar1.png);
-	position:relative;
+	position:fixed;
     float: left;
     width: 3000px;
     height: 28px;
