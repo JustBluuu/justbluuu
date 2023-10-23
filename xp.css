@@ -16,3 +16,8 @@ background: url(xpbar1.png);
     width: 3000px;
     height: 28px;
 }
+
+#taskbarstart {
+	position:fixed;
+    float: left;
+}
