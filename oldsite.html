@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Bluu">
+	<meta name="description" content="Bluu's Website">
+	<meta name="keywords" content="male_02">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>BLUU</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="window-engine.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+	<div class="windowGroup">
+
+		<!-- WINDOW 1 -->
+
+		<div id="window1" class="window small">
+				<p class="windowTitle">ABOUT ME</p>
+			<div class="mainWindow">
+				<p>Hey, i'm Bluu.</p>
+				<p>I've been doing source engine stuff for just over 2 years!</p>
+				<p>Currently working on:</p>
+				<p>Mind Over Matter</p>
+				<p>Infinite Finality</p>
+				<p>Cyclone: Sourced</p>
+			</div>
+		</div>
+
+		<!-- WINDOW 1 -->
+
+		<div id="window2" class="window taller">
+				<p class="windowTitle">PROJECTS</p>
+			<div class="mainWindow">
+				<p>Here's the projects i'm working on.</p>
+				<p><a href="https://www.moddb.com/mods/mind-over-matter">Mind Over Matter</a></p>
+				<p><a href="https://www.moddb.com/mods/infinite-finality">Infinite Finality</a></p>
+			</div>
+		</div>
+
+
+		<!-- WINDOW 1 -->
+
+		<div id="window3" class="window small">
+				<p class="windowTitle">FILES</p>
+			<div class="mainWindow">
+				<p>Some files will be hosted here.</p>
+				<p><a href="https://www.justbluu.com/files">Files</a></p>
+			</div>
+		</div>
+		<div id="window4" class="window small">
+				<p class="windowTitle">MISC</p>
+			<div class="mainWindow">
+				<p>Other stuff will go here.</p>
+				<p>Placeholder.</p>
+				<p>Come back soon.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<span id="button1"	class="my-button">ABOUT ME</span>
+		<span id="button2"	class="my-button">PROJECTS</span>
+		<span id="button3"	class="my-button">FILES</span>
+		<span id="button4"	class="my-button">MISC</span>
+	</div>
+</body>
+<script src="window-engine.js"></script>
+
+<script>
+  const buttons = document.getElementsByClassName("my-button");
+  let audio = new Audio("buttonclickrelease.wav");
+  
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("mouseover", function() {
+      audio = new Audio("buttonrollover.wav");
+      audio.play();
+    });
+    buttons[i].addEventListener("click", function() {
+      audio = new Audio("buttonclickrelease.wav");
+      audio.play();
+    });
+  }
+</script>
+
+<script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+</html>
