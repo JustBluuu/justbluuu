@@ -1,98 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>About Bluu</title>
+    <meta charset="UTF-8" />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="author" content="Bluu">
-	<meta name="description" content="Bluu's Website">
-	<meta name="keywords" content="male_02">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<title>BLUU</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="window-engine.css">
+    <!-- Windows XP Theme (include only one theme at a time) -->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    <link rel="stylesheet" href="xp.css">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-</head>
+    
+  <body>
+    
+    <div class="window" style="position:absolute; left:7px; top:7px; width: 300px">
+  <div class="title-bar">
+    <div class="title-bar-text">About Bluu</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
 
-<body>
+  <section class="tabs" style="max-width: 500px">
+  <menu role="tablist" aria-label="Sample Tabs">
+    <button role="tab" aria-selected="true" aria-controls="tab-A">About Me</button>
+    <button role="tab" aria-controls="tab-B">Projects</button>
+    <button role="tab" aria-controls="tab-C">Files</button>
+    <button role="tab" aria-controls="tab-D">Misc</button>
+  </menu>
+  <!-- the tab content -->
+  <article role="tabpanel" id="tab-A">
+    <h3>About Me</h3>
+    <p>Hey, my name's Bluu. I'm just a guy on the internet, doing nerdy shit.</p>
+    <p>Current Projects:</p>
+    <p>Mind Over Matter(?)</p>
+    <p>Infinite Finality</p>
+    <p>ByteBotic</p>
+  </article>
+  <article role="tabpanel" hidden id="tab-B">
+    <h3>Projects</h3>
+    <p>Here's some links to current projects:</p>
+    <p>
+      <a href="https://www.moddb.com/mods/mind-over-matter" target="_blank">Mind Over Matter</a>
+    </p>
+    <p>
+      <a href="https://www.moddb.com/mods/infinite-finality" target="_blank">Infinite Finality</a>
+    </p>
+  </article>
+  <article role="tabpanel" hidden id="tab-C">
+    <h3>Files</h3>
+    <p>Files can be found <a href="https://www.justbluu.com/files" target="_blank">here.</a> </p>
+  </article>
+  <article role="tabpanel" hidden id="tab-D">
+    <h3>Misc</h3>
+    <p>
+      <a href="https://www.justbluu.com/oldsite" target="_blank">Old Site Index</a>
+    </p>
+  </article>
+</section>
+    
+  </div>
+</div>
+    
+  <script src="script.js"></script>
 
-	<div class="windowGroup">
+<div class="window" style= "position:absolute; right:7px; top:7px; width: 475px">
+  <div class="title-bar">
+    <div class="title-bar-text">Command Prompt</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <pre>Microsoft&#10094;R&#10095; Windows DOS 
+&#10094;C&#10095; Copyright Microsoft Corp 1990-2001.
+      <br>C:&#92;> Intrests:
+      <br>Games: OneShot, Pizza Tower, Celeste, Half-Life, 
+      <br>Portal, Cyclone 
+      <br>Music: Indie / Midwest Emo
+      <br>Movies: End Of Evangelion, Spiderverse Movies,
+      <br>The Perks Of Being A Wallflower, 500 Days Of Summer
+      <br>Shows: Neon Genesis Evangelion, Serial
+      <br>Experiments: Lain, Daria, I Am Not Okay With This, 
+      <br>The End Of The F***ing World, Adventure Time, 
+      <br>Pantheon
+      <br>Books: By the Time You Read This, I'll Be Dead
+    </pre>
+  </div>
+</div>
+<div id="taskbar" style="bottom:0px;">
+ <img src="xpbar1.png" alt="Windows XP Bar">
+</div>
+<div id="taskbarstart" style="bottom:-6px;">
+<img src="xpbar2.jpg" alt="Windows XP Start">
+</div>
 
-		<!-- WINDOW 1 -->
+  <div class="window" style="position:absolute; left:7px; bottom:34px; width: 300px">
+  <div class="title-bar">
+    <div class="title-bar-text">Windows Media Player</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <p>Hope ya like fredo disco.</p>
 
-		<div id="window1" class="window small">
-				<p class="windowTitle">ABOUT ME</p>
-			<div class="mainWindow">
-				<p>Hey, i'm Bluu.</p>
-				<p>I've been doing source engine stuff for just over 2 years!</p>
-				<p>Currently working on:</p>
-				<p>Mind Over Matter</p>
-				<p>Infinite Finality</p>
-				<p>Cyclone: Sourced</p>
-			</div>
-		</div>
+    <ul class="tree-view">
+  <li>
+  <details closed>
+      <summary>Fredo Disco</summary>
+      <ul>
+        <li>
+          <details>
+            <summary>Released</summary>
+            <ul>
+              <li>Prom, Post Prom, Etc.</li>
+              <li>Ghost of Mariano's</li>
+              <li>Any Worze</li>
+            </ul>
+          </details>
+   </ul>
+  </li>
+  <li>    
+  <details closed>
+      <summary>Glass Beach</summary>
+      <ul>
+        <li>
+          <details>
+            <summary>Released</summary>
+            <ul>
+              <li>Cold Weather</li>
+              <li>Neon Glow</li>
+              <li>Yoshi's Island</li>
+            </ul>
+          </details>
+   </ul>
+  </li>
+    <div class="status-bar">
+    <p class="status-bar-field">Press F1 for help</p>
+    <p class="status-bar-field">Slide 1</p>
+    <p class="status-bar-field">Music Got Legally: 0%</p>
+  </div>
+  </div>
+</div>
 
-		<!-- WINDOW 1 -->
-
-		<div id="window2" class="window taller">
-				<p class="windowTitle">PROJECTS</p>
-			<div class="mainWindow">
-				<p>Here's the projects i'm working on.</p>
-				<p><a href="https://www.moddb.com/mods/mind-over-matter">Mind Over Matter</a></p>
-				<p><a href="https://www.moddb.com/mods/infinite-finality">Infinite Finality</a></p>
-			</div>
-		</div>
-
-
-		<!-- WINDOW 1 -->
-
-		<div id="window3" class="window small">
-				<p class="windowTitle">FILES</p>
-			<div class="mainWindow">
-				<p>Some files will be hosted here.</p>
-				<p><a href="https://www.justbluu.com/files">Files</a></p>
-			</div>
-		</div>
-		<div id="window4" class="window small">
-				<p class="windowTitle">MISC</p>
-			<div class="mainWindow">
-				<p>Other stuff will go here.</p>
-				<p>Placeholder.</p>
-				<p>Come back soon.</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<span id="button1"	class="my-button">ABOUT ME</span>
-		<span id="button2"	class="my-button">PROJECTS</span>
-		<span id="button3"	class="my-button">FILES</span>
-		<span id="button4"	class="my-button">MISC</span>
-	</div>
-</body>
-<script src="window-engine.js"></script>
-
-<script>
-  const buttons = document.getElementsByClassName("my-button");
-  let audio = new Audio("buttonclickrelease.wav");
-  
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("mouseover", function() {
-      audio = new Audio("buttonrollover.wav");
-      audio.play();
-    });
-    buttons[i].addEventListener("click", function() {
-      audio = new Audio("buttonclickrelease.wav");
-      audio.play();
-    });
-  }
-</script>
-
-<script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+  </body>
 </html>
