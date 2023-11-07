@@ -1,0 +1,23 @@
+body {
+background: url(bg6.jpg) no-repeat center center fixed;
+background-size: 100vw 100vh;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+font-smooth: never;
+-webkit-font-smoothing : none;
+cursor: url(xpcursor.cur')
+}
+
+#taskbar {
+background: url(xpbar1.png);
+	position:fixed;
+    float: left;
+    width: 3000px;
+    height: 28px;
+}
+
+#taskbarstart {
+	position:fixed;
+    float: left;
+}
